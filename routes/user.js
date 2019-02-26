@@ -30,8 +30,6 @@ router.use((req, res, next) => {
 
 router.get('/', controllers.user.show)
 
-router.delete('/', controllers.user.delete)
-
 
   
 
