@@ -5,9 +5,9 @@ const
   jwt = require('jsonwebtoken'),
   controllers = require('../controllers')
 
-router.post('/signup', controllers.user.signup);
+//router.post('/signup', controllers.user.signup);
 
-router.post('/login', controllers.user.login)
+//router.post('/login', controllers.user.login);
 
 router.use((req, res, next) => {
   console.log('activated')
@@ -29,10 +29,5 @@ router.use((req, res, next) => {
 })
 
 router.get('/', controllers.user.show)
-
-
-  
-
-
 
 module.exports = router;
