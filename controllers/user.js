@@ -134,7 +134,6 @@ module.exports = {
       } else {
         res.json('No user Id provided')
       }
-      
     },
     delete: (req, res) => {
         console.log("hitting delete");
