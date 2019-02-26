@@ -1,11 +1,11 @@
-const mongoose = require('../models/Dog')
-const data = require('./data')
+const 
+    data = require('./data'),
+    db = require('../models')
 
-const Dog = mongoose.model('Dog')
 
-Dog.remove({})
-    .then(_ => {
-        Dog.collection.insert(data)
+db.Dog.remove({})
+    .then(() => {
+        db.Dog.collection.insert(data)
             .then(seededEntries => {
                 console.log(seededEntries)
                 process.exit()
